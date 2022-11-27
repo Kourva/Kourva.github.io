@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html style=" background: #1A1A1A ">
+<html style=" background: black ">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemeSec</title>
+    <link rel="icon" type="image/x-icon" href="files/anarchy.ico">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
 
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}        
+
+canvas {
+    display: white;
+    position: absolute;
+}
+</style>
 <body>
-    <center>
-        <h1 style="color: white; font-size: 400%;">привет</h1>
-    </center>
+    <canvas id="c"></canvas>
 
     <center>
-        <a href="#">
+        <h1 style="color: white; font-size: 400%;position: relative;">привет</h1>
+    </center>
+
+    <br><br>
+    <center>
+        <a href="#" style="position: relative;">
             <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&duration=4000&pause=1000&color=FFFFFF&width=250&size=15&height=30&lines=I+Am+Working+On+This+Website..." alt="Working" />
         </a>
     </center>
@@ -44,6 +59,44 @@
         </div>
     </center>
 
-    <iframe allow="autoplay" src='LFDY.mp3' style="display:none"></iframe>
+    <iframe allow="autoplay" src='files/theme.mp3' style="display:none"></iframe>
 </body>
+<script>
+    var c = document.getElementById("c");
+    var ctx = c.getContext("2d");
+
+    c.height = window.innerHeight;
+    c.width = window.innerWidth;
+    
+    var matrix = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン";
+    matrix = matrix.split("");
+    
+    var font_size = 10;
+    var columns = c.width/font_size;
+    var drops = [];
+    
+    for(var x = 0; x < columns; x++)
+        drops[x] = 1; 
+    
+    function draw()
+    {
+        ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+        ctx.fillRect(0, 0, c.width, c.height);
+
+        ctx.fillStyle = "#00aa00";
+        ctx.font = font_size + "px arial";
+
+        for(var i = 0; i < drops.length; i++)
+        {
+            var text = matrix[Math.floor(Math.random()*matrix.length)];
+            ctx.fillText(text, i*font_size, drops[i]*font_size);
+            if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                drops[i] = 0;
+                drops[i]++;
+            }
+        }
+
+    setInterval(draw, 35);
+</script>
+
 </html>
