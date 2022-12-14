@@ -1,35 +1,38 @@
-var c = document.getElementById("c");
-var ctx = c.getContext("2d");
+const password_ele = document.getElementById("pwd_txt");
+var string = "ABCDEFGHIJKLMNOPQRSTUVWXYZacdefghijklnopqrstuvwxyz0123456789";
+const special_chars = "@#$%^&*";
+const generate = document.getElementById("generate");
+const clipboard = document.getElementById("clipboard");
+var pwd_length = document.getElementById("slider");
 
-c.height = window.innerHeight;
-c.width = window.innerWidth;
-
-var matrix = "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン";
-matrix = matrix.split("");
-
-var font_size = 10;
-var columns = c.width/font_size;
-var drops = [];
-
-for(var x = 0; x < columns; x++)
-    drops[x] = 1; 
-    
-function draw()
-{
-    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
-    ctx.fillRect(0, 0, c.width, c.height);
-
-    ctx.fillStyle = "#00aa00";
-    ctx.font = font_size + "px arial";
-
-    for(var i = 0; i < drops.length; i++)
-    {
-        var text = matrix[Math.floor(Math.random()*matrix.length)];
-        ctx.fillText(text, i*font_size, drops[i]*font_size);
-        if(drops[i]*font_size > c.height && Math.random() > 0.975)
-            drops[i] = 0;
-            drops[i]++;
-        }
+generate.addEventListener('click', () => {
+    let password = "";
+    var checked = document.getElementById("checkbox").checked;
+    var final_string = string;
+    console.log(checked);
+    if (checked) {
+        final_string += "@#$%^&*";
     }
+    for (var i = 0; i < pwd_length.value; i++) {
+        let pwd = final_string[Math.floor(Math.random() * final_string.length)];
+        password += pwd;
+    }
+    password_ele.innerText = "⌬ " + password;
+    temp = password;
+    final_string = string;
+});
 
-setInterval(draw, 35);
+
+clipboard.addEventListener('click', () => {
+    navigator.clipboard.writeText(temp);
+    alert("⌬ Password copied to clipboard");
+});
+
+function clickEffect(e){
+    var d=document.createElement("div");
+    d.className="clickEffect";
+    d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+    document.body.appendChild(d);
+    d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+}
+document.addEventListener('click',clickEffect);
