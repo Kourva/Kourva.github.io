@@ -1,11 +1,17 @@
+
+
 body, html {
     height: 100%;
 }
 
 body {
     font-family: monospace ;
-    background-color: black;
+    width: auto;
+    height: auto;
+    background-color: #000000;
+    line-height: 1.6;
 }
+
 h1 {
     color: white;
     font-size: 100%;
@@ -16,7 +22,6 @@ h1 {
 
 button {
     background-color: #000000;
-    border-collapse: red;
     color: white;
     padding: 1px 1px;
     text-align: center;
@@ -25,21 +30,12 @@ button {
     font-size: 12px;
 }
 
-#bg {
-    background:
-        linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url("files/bg.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 div.clickEffect{
     position:fixed;
     box-sizing:border-box;
     border-style:solid;
-    border-color:#444444;
+    border-color: #550000;
     border-radius:20%;
     animation:clickEffect 0.4s ease-out;
     z-index:99999;
