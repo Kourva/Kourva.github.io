@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html style=" background: black ">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>𝕴𝖟𝖔𝖑𝖆𝖇𝖊𝖑𝖆</title>
     <link rel="icon" type="image/x-icon" href="files/anarchy.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
-<body>
-    <canvas id="c"></canvas>
+<body id="bg">
 
-    <center>
-        <h1 style="color: white; font-size: 400%;position: relative;">привет</h1>
-    </center>
 
-    <br><br>
-    <center>
-        <a href="#" style="position: relative;">
-            <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&duration=4000&pause=1000&color=FFFFFF&width=250&size=15&height=30&lines=I+Am+Working+On+This+Website..." alt="Working" />
-        </a>
-    </center>
 
-    <br><br><br><br><br>
-    <center>
-        <div class="socializer a sr-32px sr-ribbon sr-opacity sr-icon-white sr-pad">
-            <span class="sr-github sr-text-hover">
-                <a href="https://github.com/SlavPH" target="_blank" title="SlavPH">
-                    <i class="fab fa-github"></i>
-                </a>
-                <span class="text">SlavPH</span>
-            </span>
-            <span class="sr-telegram sr-text-hover">
-                <a href="https://Izolabela.t.me" target="_blank" title="Telegram">
-                    <i class="fab fa-telegram-plane"></i>
-                </a>
-                <span class="text">Telegram</span>
-            </span>
-            <span class="sr-github sr-text-hover">
-                <a href="https://github.com/Izolabela" target="_blank" title="MemeSec">
-                    <i class="fab fa-github"></i>
-                </a>
-                <span class="text">Izolabela</span>
-            </span>
 
+    <left><b>
+        <h1>ヅ Welcome my friend! Enjoy</h1>
+        <br>
+        <h1>⌬ Password Generator</h1>
+
+        <div class="wrapper">
+            
+            <h1>⌬ <button id="generate">Generate password</button></h1>
+            <div style="color: red; font-family: monospace;">
+                <h1>⌬  Password length: 
+                <input type="text" value="16"  style="background-color: #000000; border-collapse: red; color: white; width: 7%;" 
+                    oninput="this.nextElementSibling.value = this.value" id="slider">
+                </h1>
+            </div>
+
+            <label class="container" style="color: white; font-size: 100%; position: relative; width: auto; height: auto; ">⌬ Include special characters ?
+                <input type="checkbox" checked="checked" id="checkbox">
+                <span class="checkmark"></span>
+            </label>
         </div>
-    </center>
 
+
+
+        <div class="wrapper_main">
+            <h1 id="pwd_txt" style="color: green;">⌬ Your password here</h1>
+            <h1>⌬ <button id="clipboard">Copy to clipboard</button></h1>   
+        </div>
+
+        <br><br><br>
+
+        <a href="htpps://t.me/Izolabela" style="color: black;">
+            <h1>〄 Telegram</h1>
+        </a>
+        <a href="htpps://github.com/Izolabela" style="color: black;">
+            <h1>〄 Github</h1>
+        </a>
+        <a href="htpps://github.com/SlavPH" style="color: black;">
+            <h1>〄 Github</h1>
+        </a>
+
+
+
+    </b></left>
+    
     <iframe allow="autoplay" src='files/theme.mp3' style="display:none"></iframe>
 </body>
 <script src="script.js"></script> 
