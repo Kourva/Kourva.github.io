@@ -1,6 +1,6 @@
 # Config files for my Website
 
-> https://izolabela.github.io                                
+> https://Kourva.github.io                                
 > **feel free to use these files**
 
 ### Tools
