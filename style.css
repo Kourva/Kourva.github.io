@@ -1,4 +1,18 @@
+.topnav {
+    background-color: #111111;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #8c4089;
+    padding: 10px;
+}
 
+.Border {
+    background-color: #111111;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #8c4089;
+    padding: 10px;
+}
 
 body, html {
     height: 100%;
