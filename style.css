@@ -1,70 +1,160 @@
-.topnav {
-    background-color: #111111;
-    overflow: hidden;
-    border-style: solid;
-    border-color: #8c4089;
-    padding: 10px;
-}
-
-.Border {
-    background-color: #111111;
-    overflow: hidden;
-    border-style: solid;
-    border-color: #8c4089;
-    padding: 10px;
-}
-
+/* Body and Html */
 body, html {
     height: 100%;
 }
 
+/* Body */
 body {
     font-family: monospace ;
     width: auto;
     height: auto;
-    background-color: #000000;
+    background-color: #111111;
     line-height: 1.6;
 }
 
-h1 {
-    color: white;
-    font-size: 100%;
-    position: relative;
-    width: auto; 
-    height: auto; 
+/* Click effect */
+div.clickEffect {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #333333;
+    border-radius: 30%;
+    animation: clickEffect 0.2s ease-out;
+    z-index: 99999;
 }
 
-button {
-    background-color: #000000;
-    color: white;
-    padding: 1px 1px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
+@keyframes clickEffect {
+    0% {
+        opacity: 1;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+    }
+
+    100% {
+        opacity :0.2;
+        width: 5em;
+        height: 5em;
+        margin: -2.5em;
+        border-width: 0.03em;
+    }
+}
+
+/* Social links */
+a {
+    font-family: monospace;
+}
+
+/* Profile */
+.fir-clickcircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border-style: outset;
+  border-color: #666666;
+  cursor: pointer;
+}
+
+.fir-clickcircle:hover {
+  filter: brightness(1.2);
+}
+
+.fir-image-figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  text-decoration: none;
+}
+
+.fir-image-figure .caption, .fir-image-figure figcaption {
+  padding-left: 15px;
+}
+
+html.wf-active .fir-image-figure .fig-author-figure-title {
+  font-family: monospace;
+  font-size: 16px;
+  color: #666666;
+}
+
+.fir-image-figure .fig-author-figure-title {
+  color: #666666;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.fir-imageover {
+  position: relative;
+  display: flex;
 }
 
 
-div.clickEffect{
-    position:fixed;
-    box-sizing:border-box;
-    border-style:solid;
-    border-color: #550000;
-    border-radius:20%;
-    animation:clickEffect 0.4s ease-out;
-    z-index:99999;
+.fir-imageover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeInFadeOut 2s infinite;
 }
-@keyframes clickEffect{
-    0%{
-    opacity:1;
-    width:0.5em; height:0.5em;
-    margin:-0.25em;
-    border-width:0.5em;
+
+@keyframes fadeInFadeOut {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
 }
-100%{
-    opacity:0.2;
-    width:5em; height:5em;
-    margin:-2.5em;
-    border-width:0.03em;
+
+/* Svg hover */
+svg:hover{
+  filter: brightness(2.0);
 }
+
+/* User change button */
+.change-username-button {
+  position: absolute;
+  cursor: pointer;
+  color: #666666;
+  background-color: transparent;
+  border: transparent;
+  top: 19px;
+  right: 10px;
+
 }
+change-username-button:hover {
+  filter: brightness(1.5);
+
+}
+
+/* Loading */
+.container {
+  width: 40px;
+  height: 50px;
+  margin: 50px auto;
+  margin-top: calc(50vh / 2 - 25px);
+}
+
+.block {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 1.5px;
+  background: #aaaaaa;
+}
+
+.block:nth-child(4n+1) { animation: wave 2s ease .0s infinite; }
+.block:nth-child(4n+2) { animation: wave 2s ease .2s infinite; }
+.block:nth-child(4n+3) { animation: wave 2s ease .4s infinite; }
+.block:nth-child(4n+4) { animation: wave 2s ease .6s infinite; margin-right: 0; }
+
+@keyframes wave {
+  0%   { top: 0;     opacity: 1; }
+  50%  { top: 15px;  opacity: .2; }
+  100% { top: 0;     opacity: 1; }
+}
+
+/* End */
