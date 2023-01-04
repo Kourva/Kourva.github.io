@@ -4,5 +4,5 @@
 > https://Kourva.github.io                                
 > **feel free to use these files**
 
-# I'm learning how to use **<py-script>** 
+# I'm learning how to use **PyScript** 
 
