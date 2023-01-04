@@ -4,7 +4,5 @@
 > https://Kourva.github.io                                
 > **feel free to use these files**
 
-### Tools
-+ User generator
-+ Password generator
+# I'm learning how to use **<py-script>** 
 
