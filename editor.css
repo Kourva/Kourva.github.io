@@ -1,0 +1,308 @@
+/* Editor */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.input {
+    width: 98%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 5px;
+    outline: none;
+    font-size: 17px;
+}
+
+.button {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 19px;
+    background: #222222;
+    color: white;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #222222; 
+}
+
+header {
+    color: #aaaaaa;
+    font-family: monospace;
+}
+
+header > span {
+    padding: 5px;
+    display: block;
+    background: #111111;
+}
+
+nav {
+    background: #111111;
+    padding-top: 3px;
+}
+
+header > nav > ul, header > nav > ul > li > ul, header > nav > ul > li > ul > li > ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    padding: 3px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-bottom: 9px;
+}
+
+header > nav > ul > li > ul {
+    display: none;
+    position: absolute;
+    margin-left: -3.5px;
+}
+
+header > nav > ul > li:hover {
+    background: #222222;
+    cursor: pointer;
+}
+
+header > nav > ul > li:hover > ul {
+    margin-top: 8px;
+    display: block;
+    background: #222222;
+    cursor: pointer;
+}
+
+header > nav > ul > li > ul > li,  header > nav > ul > li > ul > li > ul > li {
+    width: 80px;
+    padding: 5px;
+}
+
+header > nav > ul > li > ul > li:hover {
+    background: #333333;
+}
+
+header > nav > ul > li > ul > li > ul {
+    display: none;
+    position: absolute;
+    margin-left: 83px;
+    margin-top: -22px;
+    text-align: center;
+}
+
+header > nav > ul > li > ul > li:hover > ul {
+    display: block;
+    background: #222222;
+    cursor: pointer;
+}
+
+header > nav > ul > li > ul > li > ul > li:hover {
+    background: #333333;
+}
+
+main {
+    border-top: 1px solid black;
+    height: 93.1%;
+}
+
+main > textarea {
+    display: block;
+    width: 99.6%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: #aaaaaa;
+}
+
+.status-bar {
+    font-family: monospace;
+    top: 96%;
+    padding: 5px;
+    height: 35px;
+    width: 99.4%;
+    background: #111111;
+    color: #aaaaaa;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.alert {
+    position: fixed;
+    top: 40%;
+    left: 20%;
+    font-family: monospace;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+}
+
+.alert > div:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #18191A;
+    font-size: 22px;
+    padding: 7px;
+}
+
+.alert > div:nth-child(2) {
+    background: #2F3030;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dialog {
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dialog > div {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    height: 30%;
+    background: #cccccc;
+    font-family: monospace;
+}
+
+.dialog > div > div:first-child {
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 7px;
+    padding-bottom: 8px;
+    background: #353535;
+    color: white;
+}
+
+.dialog > div > div:first-child > span { 
+    font-size: 18px;
+}
+
+.dialog > div > div:first-child > span:hover {
+    cursor: pointer;
+    color: #dbd9d9;
+}
+
+.dialog > div > div:first-child > div {
+    font-size: 24px;
+    display: block;
+}
+
+.dialog > div > div:nth-child(2) {
+    padding: 14px;
+    font-size: 14px;
+}
+
+.dialog-auto-height > div {
+    height: auto;
+    width: 90%;
+}
+
+.open_file {
+    display: none;
+}
+
+.open_cookie_div {
+    overflow-y: auto;
+    max-height: 140px;
+}
+
+.open_cookie_div > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+
+.open_cookie_div > div > span:nth-child(2) > span:nth-child(2) {
+    margin-left: 0px;
+}
+
+.open_cookie_div > div:hover {
+    cursor: pointer;
+}
+
+.open_cookie_div > div:hover > span:first-child {
+    text-decoration: underline;
+}
+
+.open_cookie_div > div > span:nth-child(2):hover {
+    color: red;
+}
+
+/* Click effect */
+
+div.clickEffect {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #333333;
+    border-radius: 30%;
+    animation: clickEffect 0.2s ease-out;
+    z-index: 99999;
+}
+
+@keyframes clickEffect {
+    0% {
+        opacity: 1;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+    }
+
+    100% {
+        opacity :0.2;
+        width: 5em;
+        height: 5em;
+        margin: -2.5em;
+        border-width: 0.03em;
+    }
+}
+
+/* Ends */
