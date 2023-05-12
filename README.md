@@ -1,7 +1,14 @@
-# Config files for my Website
-![38-384207_windows-xp-pixel-art](https://user-images.githubusercontent.com/118578799/210282262-d70ee9f4-c39d-4f73-b94f-ad737c11e88c.jpg)
+<h1 align="left">
+  <p>Config files for my Website</p>
+  <img align="left" src="https://github.com/Kourva/Kourva.github.io/assets/118578799/d2441e6d-6afb-4429-a154-0ffebc0d97d2" width=120 height=120 />
+</h1>
 
 > https://Kourva.github.io                                
-> **feel free to use these files**
+> **feel free to use source**
 
-# I'm learning how to use **PyScript** 
+<br><br><br><br>
+I'm learning how to use **PyScript**
+<br>This website works with HTML, CSS and PyScript. So it uses Python instead of JavaScript
+
+The current contents in website are...
++ RLE (Run Length Encoding) tool
