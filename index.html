@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <title>Welcome Stranger</title>
+        <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    </head>
+    <body>
+
+        <!-- Navigation menu -->
+        <nav>
+            <a href="#", target="blank">MainMenu</a>
+            <a href="https://instagram.com/Kourva", target="blank">Developer</a>
+            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SouceCode</a>
+            <div id="indicator"></div>
+        </nav>
+
+        <!-- Decode box -->
+        <div class="box1">
+            <h2 class="box-header">Encode RLE (Run Length Encoding)</h2>
+            <p class="box-hint">Enter your Plain Text to Encode...</p>
+            <input class="box-input", id="encode_input">
+            <p id="encode_output", class="output-paragraph"></p>
+            <button py-click="en_reset()", class="reset_button", id="en_reset_button" >Reset</button>
+            <button py-click="encode()", class="submit_button", id="encode_button" >Encode</button>
+        </div>
+        
+        <!-- Encode box -->
+        <div class="box2">
+            <h2 class="box-header">Decode RLE (Run Length Encoding)</h2>
+            <p class="box-hint">Enter your Encoded Text to Decode...</p>
+            <input class="box-input", id="decode_input">
+            <p id="decode_output", class="output-paragraph"></p>
+            <button py-click="de_reset()", class="reset_button", id="de_reset_button" >Reset</button>
+            <button py-click="decode()", class="submit_button" id="decode_button" >Decode</button>
+        </div>
+
+    <!-- Python Packages -->
+    <py-config></py-config>
+
+    <!-- Python Scripts -->
+    <py-script>
+    from pyscript import Element
+    
+    # Encode data
+    def encode():
+        encode_input = Element("encode_input").value  # Input
+        encode_output = Element("encode_output")      # Output
+
+        if encode_input == "":
+            encode_output.write("Input is required for decoding!")
+            return
+
+        # RLE Compression
+        data = encode_input
+        compressed_data = ""
+        count = 1
+        for i in range(1, len(data)):
+            if data[i] == data[i - 1]:
+                count += 1
+            else:
+                compressed_data += str(count) + data[i - 1]
+                count = 1
+        compressed_data += str(count) + data[-1]
+
+        # Set Output
+        encode_output.write(compressed_data) 
+
+    # Decode data
+    def decode():
+        decode_input = Element("decode_input").value  # Input
+        decode_output = Element("decode_output")      # Output
+
+        if decode_input == "":
+            decode_output.write("Input is required for decoding!")
+            return
+
+        # RLE De-Compression
+        data = decode_input
+        decompressed_data = ""
+        count = ""
+        for character in data:
+            if character.isdigit():
+                count += character
+            else:
+                decompressed_data += int(count) * character
+                count = ""
+
+        # Set Output
+        decode_output.write(decompressed_data) 
+
+
+    # Reset Encode Output
+    def en_reset():
+        encode_output = Element("encode_output")
+        encode_output.write("")
+
+    # Reset Decode Output
+    def de_reset():
+        decode_output = Element("decode_output")
+        decode_output.write("")
+    </py-script> 
+</body>
+</html>
