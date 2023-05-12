@@ -1,5 +1,5 @@
 <h1 align="left">
-  <p>Config files for my Website</p>
+  <p>Config files for my Website</p> 
   <img align="left" src="https://github.com/Kourva/Kourva.github.io/assets/118578799/d2441e6d-6afb-4429-a154-0ffebc0d97d2" width=120 height=120 />
 </h1>
 
