@@ -14,8 +14,9 @@
         <!-- Navigation menu -->
         <nav>
             <a href="https://kourva.github.io">MainMenu</a>
-            <a href="https://instagram.com/realkourva", target="blank">Developer</a>
-            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SouceCode</a>
+            <a href="https://t.me/Kourva", target="blank">Developer</a>
+            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SourceCode</a>
+            <div class="animation start-home"></div>
             <div id="indicator"></div>
         </nav>
         <div class="box1" >
@@ -25,14 +26,14 @@
             <p class="input-hint">Enter the Target's IP address please</p>
             <input class="addrs-input", type="text" id="addrs-input", placeholder="IP Address Ex: 8.8.8.8">
             <button py-click="main()", class="submit_button" id="lookup_button" >Track</button>
-            <pre id="lookup_output", class="output-paragraph"></pre>
-        </div>
-        <!-- Python Packages -->
-        <py-config>
-            [[fetch]]
-            files = ["Scripts/request.py"]
-        </py-config>
-        <!-- Python Scripts for RLE Compression -->
-    <py-script src="Scripts/iplookup.py"></py-script>
+        <pre id="lookup_output", class="output-paragraph"></pre>
+    </div>
+    <!-- Python Packages -->
+    <py-config>
+        [[fetch]]
+        files = ["Scripts/request.py"]
+    </py-config>
+    <!-- Python Scripts for RLE Compression -->
+<py-script src="Scripts/iplookup.py"></py-script>
 </body>
 </html>
