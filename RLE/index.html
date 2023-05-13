@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+        <!-- HTML Meta Tags -->
+        <title>RLE Compression</title>
+        <meta name="description" content="Our plaintext RLE compression tool makes compressing and decompressing text data simple with just one click. select 'encode', and the output will show the compressed version with space savings info and Vice Versa.">
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="RLE Compression">
+        <meta itemprop="description" content="Our plaintext RLE compression tool makes compressing and decompressing text data simple with just one click. select 'encode', and the output will show the compressed version with space savings info and Vice Versa.">
+        <meta itemprop="image" content="https://github-production-user-asset-6210df.s3.amazonaws.com/118578799/237872838-d2441e6d-6afb-4429-a154-0ffebc0d97d2.png">
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://kourva.github.io">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="RLE Compression">
+        <meta property="og:description" content="Our plaintext RLE compression tool makes compressing and decompressing text data simple with just one click. select 'encode', and the output will show the compressed version with space savings info and Vice Versa.">
+        <meta property="og:image" content="https://github-production-user-asset-6210df.s3.amazonaws.com/118578799/237872838-d2441e6d-6afb-4429-a154-0ffebc0d97d2.png">
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="RLE Compression">
+        <meta name="twitter:description" content="Our plaintext RLE compression tool makes compressing and decompressing text data simple with just one click. select 'encode', and the output will show the compressed version with space savings info and Vice Versa.">
+        <meta name="twitter:image" content="https://github-production-user-asset-6210df.s3.amazonaws.com/118578799/237872838-d2441e6d-6afb-4429-a154-0ffebc0d97d2.png">
+        <meta name="keywords" content="RLE compression, data compression, lossless compression, run-length encoding, Kourva">
+    </head>
+    <body>
+        <!-- Navigation menu -->
+        <nav>
+            <a href="https://kourva.github.io", target="blank">MainMenu</a>
+            <a href="https://instagram.com/realkourva", target="blank">Developer</a>
+            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SouceCode</a>
+            <div id="indicator"></div>
+        </nav>
+        <!-- Decode box -->
+        <div class="box1">
+            <h2 class="box-header">Encode RLE (Run Length Encoding)</h2>
+            <p class="box-hint">Enter your Plain Text to Encode...</p>
+            <input class="box-input", id="encode_input">
+            <pre id="encode_output", class="output-paragraph"></pre>
+            <button py-click="en_reset()", class="reset_button", id="en_reset_button" >Reset</button>
+            <button py-click="encode()", class="submit_button", id="encode_button" >Encode</button>
+        </div>
+        
+        <!-- Encode box -->
+        <div class="box2">
+            <h2 class="box-header">Decode RLE (Run Length Encoding)</h2>
+            <p class="box-hint">Enter your Encoded Text to Decode...</p>
+            <input class="box-input", id="decode_input">
+            <pre id="decode_output", class="output-paragraph"></pre>
+            <button py-click="de_reset()", class="reset_button", id="de_reset_button" >Reset</button>
+            <button py-click="decode()", class="submit_button" id="decode_button" >Decode</button>
+        </div>
+        <!-- Python Packages -->
+    <py-config></py-config>
+    <!-- Python Scripts for RLE Compression -->
+<py-script src="Scripts/rle.py"></py-script>
+</body>
+</html>
