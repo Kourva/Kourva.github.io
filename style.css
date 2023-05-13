@@ -1,3 +1,204 @@
+@media only screen and (max-width:767px) {
+    html, body {
+        height: 100%;
+        ont-family: monospace;
+        font-family: monospace;
+    }
+
+    body {
+        margin: 0;
+        background-color: #293241;
+        overflow: hidden;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background-color: #293241;
+        border-radius: 0px;
+        font-size: 0;
+    }
+
+    nav a {
+        line-height: 50px;
+        height: 100%;
+        font-size: 14px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        transition: all .5s ease 0s;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    a:nth-child(1) {
+        width: 33.3%;
+    }
+
+    a:nth-child(2) {
+        width: 33.3%;
+    }
+
+    a:nth-child(3) {
+        width: 33.3%;
+    }
+
+    nav .start-home, a:nth-child(1):hover~.animation {
+        width: 33.3%;
+        left: 0;
+        background-color: #3d5a80;
+    }
+
+    nav .start-about, a:nth-child(2):hover~.animation {
+        width: 33.3%;
+        left: 33.3%;
+        background-color: #3d5a80;
+    }
+
+    nav .start-blog, a:nth-child(3):hover~.animation {
+        width: 33.3%;
+        left: 66.6%;
+        background-color: #3d5a80;
+    }
+
+    .cube {
+        -webkit-transform-style: preserve-3d;
+        -webkit-animation: spin 6s infinite linear;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 65%;
+        left: 43%;
+        right: 0;
+    }
+
+    .cube div {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #3d5a80;
+        font-size: 42px;
+        display: block;
+        position: absolute;
+        mix-blend-mode: contrast;
+    }
+
+    .cube div.top {
+        -webkit-transform: rotateX(90deg);
+        margin-top: -12.5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.right {
+        -webkit-transform: rotateY(90deg);
+        margin-left: 12.5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.bottom {
+        -webkit-transform: rotateX(-90deg);
+        margin-top: 12.5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.left {
+        -webkit-transform: rotateY(-90deg);
+        margin-left: -12.5px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.front {
+        -webkit-transform: translateZ(12.5px);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.back {
+        -webkit-transform: translateZ(-12.5px) rotateX(180deg);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.back span {
+        transform: rotate(-180deg);
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotateX(-20deg) rotateY(20deg);
+        }
+
+        100% {
+            -webkit-transform: rotateX(-20deg) rotateY(380deg);
+        }
+
+    }
+
+    .cube:hover {
+        -webkit-animation: spin 2s infinite linear;
+    }
+
+    /* DEMO-SPECIFIC STYLES */
+    .typewriter h1 {
+        color: #98c1d9;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: .15em solid #3d5a80;
+        font-size: 15px;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .12em;
+        position: absolute;
+        left: 0;
+        top: 25%;
+        right: 0;
+        width: 60%;
+        animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+        from {
+            width: 0%
+        }
+
+        to {
+            width: 60%
+        }
+
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to {
+            border-color: transparent
+        }
+
+        30% {
+            border-color: #3d5a80
+        }
+
+    }
+
+}
+
 @media (min-width:768px) {
     html, body {
         height: 100%;
@@ -232,12 +433,4 @@
 
     }
 
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: #293241;
-    overflow: hidden;
-    font-family: monospace;
 }
