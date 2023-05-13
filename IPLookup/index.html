@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+        <!-- HTML Meta Tags -->
+        <title>IP Lookup</title>
+    </head>
+    <body>
+        <!-- Navigation menu -->
+        <nav>
+            <a href="https://kourva.github.io", target="blank">MainMenu</a>
+            <a href="https://instagram.com/realkourva", target="blank">Developer</a>
+            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SouceCode</a>
+            <div id="indicator"></div>
+        </nav>
+        <div class="box1" >
+            <iframe class="map" id="location" width="700" height="440" src="https://maps.google.com/maps?q=40.7524,120.8352&hl=es;z=14&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <div class="box2">
+            <p class="input-hint">Enter the Target's IP address please</p>
+            <input class="addrs-input", type="text" id="addrs-input", placeholder="IP Address Ex: 8.8.8.8">
+            <button py-click="main()", class="submit_button" id="lookup_button" >Track</button>
+            <pre id="lookup_output", class="output-paragraph"></pre>
+        </div>
+        <!-- Python Packages -->
+        <py-config>
+            [[fetch]]
+            files = ["Scripts/request.py"]
+        </py-config>
+        <!-- Python Scripts for RLE Compression -->
+    <py-script src="Scripts/iplookup.py"></py-script>
+</body>
+</html>
