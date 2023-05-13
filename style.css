@@ -1,0 +1,231 @@
+@media (min-width:768px) {
+    html, body {
+        height: 100%;
+        ont-family: monospace;
+    }
+
+    body {
+        margin: 0;
+        background-color: #293241;
+        overflow: hidden;
+    }
+
+    nav {
+        position: absolute;
+        top: 8%;
+        right: 0;
+        left: 0;
+        width: 30%;
+        display: table;
+        margin: 0 auto;
+        transform: translateY(-50%);
+    }
+
+    nav a {
+        position: relative;
+        width: 33.333%;
+        display: table-cell;
+        text-align: center;
+        color: #98c1d9;
+        text-decoration: none;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        transition: 0.2s ease color;
+    }
+
+    nav a:before, nav a:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 0.2s ease transform;
+    }
+
+    nav a:before {
+        top: 0;
+        left: 10px;
+        width: 6px;
+        height: 6px;
+    }
+
+    nav a:after {
+        top: 5px;
+        left: 18px;
+        width: 4px;
+        height: 4px;
+    }
+
+    nav a:nth-child(1):before {
+        background-color: white;
+    }
+
+    nav a:nth-child(1):after {
+        background-color: gray;
+    }
+
+    nav a:nth-child(2):before {
+        background-color: white;
+    }
+
+    nav a:nth-child(2):after {
+        background-color: gray;
+    }
+
+    nav a:nth-child(3):before {
+        background-color: white;
+    }
+
+    nav a:nth-child(3):after {
+        background-color: gray;
+    }
+
+    #indicator {
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: 0.2s ease left;
+    }
+
+    nav a:hover {
+        color: #e0fbfc;
+    }
+
+    nav a:hover:before, nav a:hover:after {
+        transform: scale(1);
+    }
+
+    nav a:nth-child(1):hover ~ #indicator {
+        background: linear-gradient(130deg, white, gray);
+    }
+
+    nav a:nth-child(2):hover ~ #indicator {
+        left: 34%;
+        background: linear-gradient(130deg, white, gray);
+    }
+
+    nav a:nth-child(3):hover ~ #indicator {
+        left: 70%;
+        background: linear-gradient(130deg, white, gray);
+    }
+    
+    .cube {
+      -webkit-transform-style: preserve-3d;
+      -webkit-animation: spin 6s infinite linear;
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 65%;
+      left: 45%;
+      right: 0;
+    }
+
+    .cube div {
+       width: 120px;
+       height: 120px;
+       line-height: 120px;
+       text-align: center;
+       border: 2px solid black;
+       background-color: #3d5a80;
+       font-size:42px;
+       display: block;
+       position: absolute;
+       mix-blend-mode:contrast;
+    }
+
+    .cube div.top {
+       -webkit-transform: rotateX(90deg); 
+      margin-top: -25px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.right {
+       -webkit-transform: rotateY(90deg); 
+      margin-left: 25px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.bottom {
+       -webkit-transform: rotateX(-90deg); 
+      margin-top: 25px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.left {
+       -webkit-transform: rotateY(-90deg); 
+      margin-left: -25px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.front {
+       -webkit-transform: translateZ(25px);
+       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .cube div.back {
+       -webkit-transform: translateZ(-25px) rotateX(180deg);
+       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      
+    }
+
+    .cube div.back span{ 
+      transform: rotate(-180deg);
+    }
+
+    @-webkit-keyframes spin {
+      0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
+      100% {-webkit-transform: rotateX(-20deg) rotateY(380deg);}
+    }
+
+    .cube:hover {
+        -webkit-animation: spin 2s infinite linear;
+    }
+
+
+    /* DEMO-SPECIFIC STYLES */
+    .typewriter h1 {
+      color: #98c1d9;
+      font-family: monospace;
+      overflow: hidden; 
+      border-right: .15em solid #3d5a80; 
+      white-space: nowrap; 
+      margin: 0 auto; 
+      letter-spacing: .15em; 
+      position: absolute;
+        left: 0;
+        top: 25%;
+        right:0;
+        width: 30%;
+
+
+      animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0% }
+      to { width: 30% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      30% { border-color: #3d5a80 }
+    }
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #293241;
+    overflow: hidden;
+    font-family: monospace;
+}
