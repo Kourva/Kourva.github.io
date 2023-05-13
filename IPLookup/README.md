@@ -1,1 +1,1 @@
-Assets for IP Lookup tool
+IP Lookup tool
