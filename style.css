@@ -169,7 +169,7 @@
         left: 0;
         top: 25%;
         right: 0;
-        width: 60%;
+        width: 70%;
         animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
     }
 
@@ -180,7 +180,7 @@
         }
 
         to {
-            width: 60%
+            width: 70%
         }
 
     }
