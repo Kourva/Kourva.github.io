@@ -31,32 +31,33 @@
         <!-- Navigation menu -->
         <nav>
             <a href="https://kourva.github.io">MainMenu</a>
-            <a href="https://instagram.com/realkourva", target="blank">Developer</a>
-            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SouceCode</a>
+            <a href="https://t.me/Kourva", target="blank">Developer</a>
+            <a href="https://github.com/Kourva/kourva.github.io", target="blank">SourceCode</a>
+            <div class="animation start-home"></div>
             <div id="indicator"></div>
         </nav>
         <!-- Decode box -->
         <div class="box1">
             <h2 class="box-header">Encode RLE (Run Length Encoding)</h2>
-            <p class="box-hint">Enter your Plain Text to Encode...</p>
+            <p class="box-hint">Enter your Plain Text to Encode:</p>
             <input class="box-input", id="encode_input">
-            <pre id="encode_output", class="output-paragraph"></pre>
-            <button py-click="en_reset()", class="reset_button", id="en_reset_button" >Reset</button>
-            <button py-click="encode()", class="submit_button", id="encode_button" >Encode</button>
-        </div>
-        
-        <!-- Encode box -->
-        <div class="box2">
-            <h2 class="box-header">Decode RLE (Run Length Encoding)</h2>
-            <p class="box-hint">Enter your Encoded Text to Decode...</p>
-            <input class="box-input", id="decode_input">
-            <pre id="decode_output", class="output-paragraph"></pre>
-            <button py-click="de_reset()", class="reset_button", id="de_reset_button" >Reset</button>
-            <button py-click="decode()", class="submit_button" id="decode_button" >Decode</button>
-        </div>
-        <!-- Python Packages -->
-    <py-config></py-config>
-    <!-- Python Scripts for RLE Compression -->
+        <pre id="encode_output", class="output-paragraph"></pre>
+        <button py-click="en_reset()", class="reset_button", id="en_reset_button" >Reset</button>
+        <button py-click="encode()", class="submit_button", id="encode_button" >Encode</button>
+    </div>
+    
+    <!-- Encode box -->
+    <div class="box2">
+        <h2 class="box-header">Decode RLE (Run Length Encoding)</h2>
+        <p class="box-hint">Enter your Encoded Text to Decode:</p>
+        <input class="box-input", id="decode_input">
+    <pre id="decode_output", class="output-paragraph"></pre>
+    <button py-click="de_reset()", class="reset_button", id="de_reset_button" >Reset</button>
+    <button py-click="decode()", class="submit_button" id="decode_button" >Decode</button>
+</div>
+<!-- Python Packages -->
+<py-config></py-config>
+<!-- Python Scripts for RLE Compression -->
 <py-script src="Scripts/rle.py"></py-script>
 </body>
 </html>
