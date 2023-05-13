@@ -113,111 +113,123 @@
         left: 70%;
         background: linear-gradient(130deg, white, gray);
     }
-    
+
     .cube {
-      -webkit-transform-style: preserve-3d;
-      -webkit-animation: spin 6s infinite linear;
-      position: absolute;
-      width: 120px;
-      height: 120px;
-      top: 65%;
-      left: 45%;
-      right: 0;
+        -webkit-transform-style: preserve-3d;
+        -webkit-animation: spin 6s infinite linear;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 65%;
+        left: 45%;
+        right: 0;
     }
 
     .cube div {
-       width: 120px;
-       height: 120px;
-       line-height: 120px;
-       text-align: center;
-       border: 2px solid black;
-       background-color: #3d5a80;
-       font-size:42px;
-       display: block;
-       position: absolute;
-       mix-blend-mode:contrast;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        border: 2px solid black;
+        background-color: #3d5a80;
+        font-size: 42px;
+        display: block;
+        position: absolute;
+        mix-blend-mode: contrast;
     }
 
     .cube div.top {
-       -webkit-transform: rotateX(90deg); 
-      margin-top: -25px;
-      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        -webkit-transform: rotateX(90deg);
+        margin-top: -25px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     .cube div.right {
-       -webkit-transform: rotateY(90deg); 
-      margin-left: 25px;
-      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        -webkit-transform: rotateY(90deg);
+        margin-left: 25px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     .cube div.bottom {
-       -webkit-transform: rotateX(-90deg); 
-      margin-top: 25px;
-      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        -webkit-transform: rotateX(-90deg);
+        margin-top: 25px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     .cube div.left {
-       -webkit-transform: rotateY(-90deg); 
-      margin-left: -25px;
-      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        -webkit-transform: rotateY(-90deg);
+        margin-left: -25px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     .cube div.front {
-       -webkit-transform: translateZ(25px);
-       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        -webkit-transform: translateZ(25px);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
     .cube div.back {
-       -webkit-transform: translateZ(-25px) rotateX(180deg);
-       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-      
+        -webkit-transform: translateZ(-25px) rotateX(180deg);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     }
 
-    .cube div.back span{ 
-      transform: rotate(-180deg);
+    .cube div.back span {
+        transform: rotate(-180deg);
     }
 
     @-webkit-keyframes spin {
-      0% {-webkit-transform: rotateX(-20deg) rotateY(20deg);}
-      100% {-webkit-transform: rotateX(-20deg) rotateY(380deg);}
+        0% {
+            -webkit-transform: rotateX(-20deg) rotateY(20deg);
+        }
+
+        100% {
+            -webkit-transform: rotateX(-20deg) rotateY(380deg);
+        }
+
     }
 
     .cube:hover {
         -webkit-animation: spin 2s infinite linear;
     }
 
-
     /* DEMO-SPECIFIC STYLES */
     .typewriter h1 {
-      color: #98c1d9;
-      font-family: monospace;
-      overflow: hidden; 
-      border-right: .15em solid #3d5a80; 
-      white-space: nowrap; 
-      margin: 0 auto; 
-      letter-spacing: .15em; 
-      position: absolute;
+        color: #98c1d9;
+        font-family: monospace;
+        overflow: hidden;
+        border-right: .15em solid #3d5a80;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        position: absolute;
         left: 0;
         top: 25%;
-        right:0;
+        right: 0;
         width: 30%;
-
-
-      animation: 
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
+        animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
     }
 
     /* The typing effect */
     @keyframes typing {
-      from { width: 0% }
-      to { width: 30% }
+        from {
+            width: 0%
+        }
+
+        to {
+            width: 30%
+        }
+
     }
 
     /* The typewriter cursor effect */
     @keyframes blink-caret {
-      from, to { border-color: transparent }
-      30% { border-color: #3d5a80 }
+        from, to {
+            border-color: transparent
+        }
+
+        30% {
+            border-color: #3d5a80
+        }
+
     }
 
 }
