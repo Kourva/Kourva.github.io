@@ -5,26 +5,118 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
-        <title>Welcome Friend</title>
+        <title>User@Unknown</title>
     </head>
     <body>
-        <nav>
-            <a href="/IPLookup/index.html">IP Lookup</a>
-            <a href="/RLE/index.html">RLE Tool</a>
-            <a href="https://github.com/Kourva/kourva.github.io">SourceCode</a>
-            <div class="animation start-home"></div>
-            <div id="indicator"></div>
-        </nav>
-        <div class="typewriter">
-            <h1>Select a tool to start...</h1>
+
+        <!-- Visit button -->
+        <div class="visit-button">
+            <div class="visit-button-wrapper">
+                <a href="https://t.me/kourva" target="_blank">
+                    <div class="visit-button-text">Visit</div>
+                    <span class="visit-button-icon">Kourva</span>
+                </a>
+            </div>
         </div>
-        <div class="cube">
-            <div class="top"></div>
-            <div class="right"></div>
-            <div class="bottom"></div>
-            <div class="left"></div>
-            <div class="front"></div>
-            <div class="back"></div>
+
+
+        <!-- Github button -->
+        <a href="https://github.com/kourva" target="_blank">
+            <button class="github-button">
+                <span class="svgContainer">
+                    <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                </span>
+                <span class="BG"></span>
+            </button>
+        </a>
+
+
+        <!-- Tools menu -->
+        <div class="menu">
+            <div class="menu-label">Tools</div>
+            <div class="menu-spacer"></div>
+            
+            <div class="menu-item">
+                <a href="https://kourva.github.io/Crocsy" target="_blank">
+                    <span>Crocsy</span>
+                </a>
+            </div>
+          
+            <div class="menu-item">
+                <a href="https://kourva.github.io/Hulz" target="_blank">
+                    <span>Hulz</span>
+                </a>
+            </div>
+          
+            <div class="menu-item">
+                <a href="https://kourva.github.io/IPLookup" target="_blank">
+                    <span>IpLookup</span>
+                </a>
+            </div>
+          
+            <div class="menu-item">
+                <a href="https://kourva.github.io/RLE" target="_blank">
+                    <span>RLE</span>
+                </a>
+            </div>
         </div>
+
+
+        <!-- Tooltip items -->
+        <div class="item-hints">
+          <div class="hint" data-position="4">
+            <!-- is-hint -->
+            <span class="hint-radius"></span>
+            <span class="hint-dot"></span>
+            <div class="hint-content do--split-children">
+              <p>DedSec has given you the truth. Do what you will.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Terminal -->
+        <div class="container">
+            <div class="terminal_toolbar">
+                <div class="butt">
+                    <button class="btn btn-color"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+                <p class="user">admin@admin: ~</p>
+                <div class="add_tab">
+                    +
+                </div>
+            </div>
+            <div class="terminal_body">
+                <div class="terminal_promt">
+                    <span class="terminal_user">admin@admin: </span>
+                    <span class="terminal_location">~</span>
+                    <span class="terminal_bling">$ sudo rm -rf /</span>
+                    <span class="terminal_cursor"> </span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Profiler -->
+        <div class="card">
+            <div class="card-border-top"></div>
+            <img class="img" src="https://thispersondoesnotexist.com"> 
+            <span>Target</span>
+            <p class="job">Income: 22,535$</p>
+            <button class="rbtn">Access</button>
+        </div>
+
+        <!-- Notification -->
+        <div class="warning">
+            <div class="warning__icon">
+                <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13 14h-2v-5h2zm0 4h-2v-2h2zm-12 3h22l-11-19z" fill="#393a37"></path></svg>
+            </div>
+                <div class="warning__title">Target is vulnerable!</div>
+            <div class="warning__close"><svg height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z" fill="#393a37"></path></svg></div>
+        </div>
+
+
     </body>
 </html>
