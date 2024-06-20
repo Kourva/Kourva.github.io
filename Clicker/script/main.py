@@ -26,6 +26,5 @@ document.querySelector("#main_loader").remove()
 # Free memory and get rid of everything in the worker.
 worker.terminate()
 
-document.querySelector("#body_container").InnerHTML += window.Telegram.WebAppUser
 document.querySelector("#body_container").InnerHTML += window.Telegram.WebAppUser.id
 document.querySelector("#body_container").InnerHTML += window.Telegram.WebAppUser.first_name
