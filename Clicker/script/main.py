@@ -23,7 +23,7 @@ document.querySelector("#main_loader").remove()
 # Free memory and get rid of everything in the worker.
 worker.terminate()
 
-user_detail = f"{window.Telegram.WebAppUser.id}\n{window.Telegram.WebAppUser.first_name}"
+user_detail = dir(window.Telegram)
 
 user_data = document.createElement("div");
 user_data.appendChild(
