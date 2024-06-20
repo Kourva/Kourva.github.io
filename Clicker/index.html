@@ -1,39 +1,29 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Clicker Game</title>
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/loader.css">
 
-  <!-- Load external CSS styles -->
-  <link rel="stylesheet" href="styles.css">
-
+    <!-- PyScript CSS and Bootstrap -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.6.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.6.1/core.js"></script>
+    
+    <!-- Telegram WebApp initializing -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
+    <title>Kowshan Coin</title>
 </head>
-
 <body>
 
-  <h1 id="Text">The Open Source Clicker Game</h1>
+    <div class="loader-container" id="main_loader">
+        <div class="loader" ></div>
+        <p class="loader-text">Loading... Please wait!</p>
+    </div>
 
-  <div class="moneyBtnContainer">
-    <button onclick="Click()" id="collectmoney" class="moneyBtn">Click me for cash!</button>
-  </div>
-
-  <div class="upgradesPanel">
-    <button onclick="Upgrade()" id="Multiplier" class="upgradeBtn">Upgrade Multiplier</button>
-  </div>
-
-
-  <!-- DOES NOT WORK YET SO IS COMMENTED <button onclick="spammer()" id="spammer">Buy spammer</button> DOES NOT WORK YET SO IS COMMENTED -->
-  <script src="scripts.js"></script>
-
-  <!--Click script import-->
-  <script src="click.js"></script>
-
-  <!--Multiplier script import-->
-  <script src="multiplier.js"></script>
-
+    <script type="py" src="./script/main.py" config="./config.toml"></script>
 </body>
-
 </html>
