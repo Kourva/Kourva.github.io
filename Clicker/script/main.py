@@ -3,6 +3,9 @@ from pyscript import window, document, display
 from js import navigator, screen
 from pyscript import sync
 
+# Expend the app
+window.Telegram.WebApp.expand()
+
 # Bootstrap the Pyodide worker, with optional config too.
 # The worker is:
 #   * Owned by this script, no JS or Pyodide code in the same page can access
@@ -22,9 +25,6 @@ document.querySelector("#main_loader").remove()
 
 # Free memory and get rid of everything in the worker.
 worker.terminate()
-
-# Expend the app
-window.Telegram.WebApp.expand()
 
 document.querySelector("#body_container").innerHTML += dir(window.Telegram.WebApp)
 document.querySelector("#body_container").innerHTML += dir(window.Telegram.WebApp.WebAppInitData)
