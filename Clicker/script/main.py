@@ -27,18 +27,18 @@ worker.terminate()
 window.Telegram.WebApp.expand()
 
 
-document.querySelector("#bosy_container").append(
+document.querySelector("#body_container").append(
     dir(window.Telegram.WebApp)
 )
 
-document.querySelector("#bosy_container").append(
+document.querySelector("#body_container").append(
     dir(window.Telegram.WebApp.WebAppInitData)
 )
 
-document.querySelector("#bosy_container").append(
+document.querySelector("#body_container").append(
     dir(window.Telegram.WebApp.WebAppInitData.user)
 )
 
-document.querySelector("#bosy_container").append(
+document.querySelector("#body_container").append(
     window.Telegram.WebApp.WebAppInitData
 )
