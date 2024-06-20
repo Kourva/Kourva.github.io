@@ -1,0 +1,41 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.loader {
+  clear: both;
+  width: 5%;
+  height: 5%;
+  margin: 1rem auto;
+  border: 0.0625rem #5eb5f7 solid;
+  border-radius: 0.25rem;
+  position: relative;
+  background: 
+        linear-gradient(45deg, transparent 49%, #5eb5f7 50%, #5eb5f7 50%, transparent 51%, transparent),
+        linear-gradient(-45deg, transparent 49%, #5eb5f7 50%, #5eb5f7 50%, transparent 51%, transparent);
+  background-size: 1rem 1rem;
+  background-position: 0% 0%;
+  -webkit-animation: spTexture 1s infinite linear;
+  animation: spTexture 1s infinite linear;
+}
+
+@keyframes spTexture {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -1rem 0;
+  }
+}
+
+
+.loader-text {
+  font-family: Hacker;
+  font-size: 0.8rem;
+  color: #5eb5f7;
+}

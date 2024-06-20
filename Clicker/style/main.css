@@ -1,0 +1,14 @@
+@font-face { 
+    font-family: Hacker; 
+    src: url("../assets/fonts/hacker.ttf");
+} 
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #212428;
+}
+
