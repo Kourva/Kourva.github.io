@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Clicker Game</title>
+
+  <!-- Load external CSS styles -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <h1 id="Text">The Open Source Clicker Game</h1>
+
+  <div class="moneyBtnContainer">
+    <button onclick="Click()" id="collectmoney" class="moneyBtn">Click me for cash!</button>
+  </div>
+
+  <div class="upgradesPanel">
+    <button onclick="Upgrade()" id="Multiplier" class="upgradeBtn">Upgrade Multiplier</button>
+  </div>
+
+
+  <!-- DOES NOT WORK YET SO IS COMMENTED <button onclick="spammer()" id="spammer">Buy spammer</button> DOES NOT WORK YET SO IS COMMENTED -->
+  <script src="scripts.js"></script>
+
+  <!--Click script import-->
+  <script src="click.js"></script>
+
+  <!--Multiplier script import-->
+  <script src="multiplier.js"></script>
+
+</body>
+
+</html>
