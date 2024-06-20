@@ -3,9 +3,6 @@ from pyscript import window, document, display
 from js import navigator, screen
 from pyscript import sync
 
-# Expend the app
-window.Telegram.WebApp.expand()
-
 # Bootstrap the Pyodide worker, with optional config too.
 # The worker is:
 #   * Owned by this script, no JS or Pyodide code in the same page can access
@@ -29,7 +26,7 @@ worker.terminate()
 user_data = document.createElement("div");
 user_data.appendChild(
     document.createTextNode(
-        f"{indow.Telegram.WebAppUser.id}\n{window.Telegram.WebAppUser.first_name}"
+        f"{window.Telegram.WebAppUser.id}\n{window.Telegram.WebAppUser.first_name}"
     )
 )
 
