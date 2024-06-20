@@ -16,10 +16,12 @@ document.querySelector("#main_loader").remove()
 # Free memory and get rid of everything in the worker.
 worker.terminate()
 
+print(window.Telegram.WebApp)
+
 user_data = document.createElement("div");
 user_data.appendChild(
     document.createTextNode(
-        f"User Data:\n{window.Telegram}"
+        f"User Data:\n{window.Telegram.WebApp}"
     )
 )
 document.body.append(user_data)
