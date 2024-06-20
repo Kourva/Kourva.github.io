@@ -1,6 +1,6 @@
 from pyscript import PyWorker
-from pyscript import document, display
-from js import navigator, window
+from pyscript import window, document, display
+from js import navigator
 from pyscript import sync
 
 # Bootstrap the Pyodide worker, with optional config too.
