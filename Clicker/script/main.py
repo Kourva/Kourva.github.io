@@ -16,7 +16,7 @@ document.querySelector("#main_loader").remove()
 # Free memory and get rid of everything in the worker.
 worker.terminate()
 
-print(window.Telegram.WebApp)
+print(dir(window.Telegram.WebApp))
 
 user_data = document.createElement("div");
 user_data.appendChild(
