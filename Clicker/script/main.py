@@ -26,7 +26,7 @@ worker.terminate()
 user_data = document.createElement("div");
 user_data.appendChild(
     document.createTextNode(
-        f"{window.Telegram.WebAppUser.id}\n{window.Telegram.WebAppUser.first_name}"
+        f"User Data:\n{window.Telegram.WebAppUser.id}\n{window.Telegram.WebAppUser.first_name}"
     )
 )
 
