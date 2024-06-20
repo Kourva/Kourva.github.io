@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/loader.css">
 
-    <!-- PyScript CSS and Bootstrap -->
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.6.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.6.1/core.js"></script>
-    
     <!-- Telegram WebApp initializing -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    
-    <title>Kowshan Coin</title>
-</head>
-<body>
+
     <script>
         window.Telegram.WebApp.expand()    
     </script>
 
+    <!-- PyScript CSS and Bootstrap -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.6.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.6.1/core.js"></script>
+    
+    <title>Kowshan Coin</title>
+</head>
+<body>
     <div class="loader-container" id="main_loader">
         <div class="loader" ></div>
         <p class="loader-text">Loading... Please wait!</p>
@@ -29,6 +29,6 @@
 
     <div id="body_container"></div>
 
-    <script type="mpy" src="./script/main.py" config="./config.toml"></script>
+    <script type="mpy" src="./script/main.py" config="./config.json"></script>
 </body>
 </html>
