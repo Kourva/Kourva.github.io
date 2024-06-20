@@ -26,19 +26,8 @@ worker.terminate()
 # Expend the app
 window.Telegram.WebApp.expand()
 
+document.querySelector("#body_container").InnerHTML += dir(window.Telegram.WebApp)
+document.querySelector("#body_container").InnerHTML += dir(window.Telegram.WebApp.WebAppInitData)
+document.querySelector("#body_container").InnerHTML += dir(window.Telegram.WebApp.WebAppInitData.user)
+document.querySelector("#body_container").InnerHTML += window.Telegram.WebApp.WebAppInitData
 
-document.querySelector("#body_container").append(
-    dir(window.Telegram.WebApp)
-)
-
-document.querySelector("#body_container").append(
-    dir(window.Telegram.WebApp.WebAppInitData)
-)
-
-document.querySelector("#body_container").append(
-    dir(window.Telegram.WebApp.WebAppInitData.user)
-)
-
-document.querySelector("#body_container").append(
-    window.Telegram.WebApp.WebAppInitData
-)
