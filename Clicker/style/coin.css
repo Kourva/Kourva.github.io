@@ -2,12 +2,12 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40%;
+    top: 100px;
     background-size: cover;
     border: None;
     border-radius: 50%;
-    width: 60%;
-    height: 30%;
+    width: 200px;
+    height: 200px;
     transition: all 0.3s;
     user-select:none;
     text-align: center;
