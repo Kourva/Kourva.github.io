@@ -1,5 +1,5 @@
 from pyscript import window, document, display
-
+from js import navigator
 
 def add_balacne(event):
     balance = document.querySelector("#coin_balance")
