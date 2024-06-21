@@ -1,6 +1,5 @@
 from pyscript import PyWorker
 from pyscript import window, document, display
-from js import navigator
 from pyscript import sync
 
 # Bootstrap the MicroPython worker.
@@ -15,13 +14,3 @@ document.querySelector("#main_loader").remove()
 
 # Free memory and get rid of everything in the worker.
 worker.terminate()
-
-print(dir(window.Telegram.WebApp))
-
-user_data = document.createElement("div");
-user_data.appendChild(
-    document.createTextNode(
-        f"User Data:\n{window.Telegram.WebApp}"
-    )
-)
-document.body.append(user_data)
