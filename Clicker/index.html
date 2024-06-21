@@ -28,8 +28,13 @@
         <p class="loader-text">Loading... Please wait!</p>
     </div>
 
-    <div id="body_container"></div>
+    <center>
+        <h1 class="coin-balance">$<span id="coin_balance">0</span></h1>
+    </center>
+
+    <img class="coin-button" src="/../assets/pics/coin.png" mpy-click="add_balacne">
 
     <script type="mpy" src="./script/main.py" config="./config.json"></script>
+    <script type="mpy" src="./script/balance.py" config="./config.json"></script>
 </body>
 </html>
