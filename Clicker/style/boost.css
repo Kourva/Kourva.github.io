@@ -1,0 +1,45 @@
+.boost-button {
+  width: 80%;
+  position: relative;
+  height: 2em;
+  border: 2px ridge #fda803;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.boost-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.boost-button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  transition: 0.5s;
+}
+
+.boost-button:hover::before, .boost-button:hover::after {
+  transform: scale(0)
+}
+
+.boost-button:hover {
+  box-shadow: inset 0px 0px 25px #fda803;
+}
