@@ -15,3 +15,9 @@ opacity:0.9;
 background-size: 15px 15px;
 }
 
+
+input, textarea, button, select, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
