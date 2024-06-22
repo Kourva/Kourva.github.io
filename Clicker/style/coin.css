@@ -1,8 +1,8 @@
 .coin-button {
     display: block;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
     background-size: cover;
     border: None;
     border-radius: 50%;
@@ -16,7 +16,7 @@
 }
 
 .coin-button:active {
-    transform: scale(0.93);
+    transform: scale(0.98);
 }
 
 .coin-balance {
