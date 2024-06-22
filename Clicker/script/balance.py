@@ -2,7 +2,9 @@ from pyscript import window, document, display
 
 def add_balacne(event):
     balance = document.querySelector("#coin_balance")
-    balance.innerHTML = str(int(balance.innerHTML) + 1)
+    tap_value = document.querySelector("#tap_value").innerHTML
+    balance.innerHTML = str(int(balance.innerHTML) + int(tap_value))
+
     window.navigator.vibrate(50)
 
 def upgrade_tap(event):
