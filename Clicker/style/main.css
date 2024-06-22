@@ -10,6 +10,8 @@ html, body {
 }
 
 body {
-  background-color: #2d2e35;
+  background:linear-gradient(90deg, transparent 24%,#FDA80311 25%, #FDA80311 30%, transparent 31%, transparent 39%,#FDA80311 40%, #FDA80311 45%, transparent 45%) 0% 0% / 3em 3em,linear-gradient(180deg, transparent 24%,#FDA80311 25%, #FDA80311 30%, transparent 31%, transparent 39%,#FDA80311 40%, #FDA80311 45%, transparent 45%) 0% 0% / 3em 3em #000000;
+opacity:0.9;
+background-size: 15px 15px;
 }
 
