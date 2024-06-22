@@ -24,5 +24,5 @@ def upgrade_tap(event):
         document.querySelector("#tap_money").innerHTML = str(tap_money)
         
     else:
-        window.alert("Not enough balance")
         window.navigator.vibrate(300)
+        window.alert("Not enough balance")
