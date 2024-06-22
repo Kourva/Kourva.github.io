@@ -15,7 +15,7 @@ def upgrade_tap(event):
     tap_level = tap_value
     tap_money = int(document.querySelector("#tap_money").innerHTML)
 
-    if balance > tap_money:
+    if balance => tap_money:
         balance -= tap_money
         tap_level += 1
         tap_value += 1
