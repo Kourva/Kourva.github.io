@@ -1,1 +1,0 @@
-RLE compression tool
