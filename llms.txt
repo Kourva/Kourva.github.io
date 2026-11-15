@@ -1,0 +1,44 @@
+# Kourva — Sahand Farazmehr
+
+> Sahand Farazmehr (online as Kourva) is a fullstack developer based in Ardabil, Iran, with six years of development experience and nine years of daily Linux use. He builds production web platforms with Vue 3, Nuxt 4, Laravel and Python, and is a co-founder of the small studio Kowshan.
+
+Kourva works remote-first across Ardabil, Tabriz and Tehran, and is currently employed fullstack while taking on freelance and additional contract work. This site is a single-page portfolio: the canonical URL is https://kourva.github.io/ and everything below is an anchor on that page.
+
+## Profile and experience
+
+- [About Kourva](https://kourva.github.io/#about): Six years in development. Started with pure Python, Telegram bots, and Android apps built with Kivy and Flet, then Django and the web. The last three years have been fullstack (Vue with Laravel, alongside Odoo), and the last year and a half focused on Vue and Nuxt in a small team with one backend developer.
+- [How he works](https://kourva.github.io/#approach): Pure tech, plain CSS, minimal dependencies, one visual identity per project. Solo by default; takes the frontend in pairs.
+- [Process](https://kourva.github.io/#process): Eight rules applied to every project — style, motion (GSAP where it matters), security as a default rather than a feature, structure, version control, docs, DevOps helpers, and explicit loading/error/empty/success states.
+- [How he uses AI](https://kourva.github.io/#ai): As a tool, not a teammate — idea discussion, repetitive CSS, replacing manual search. Every output is reviewed before it ships.
+
+## Projects
+
+- [Asayroom](https://asayroom.ir): National therapy platform (Vue 3 + Nuxt 4) for psychology, psychiatry and counselling. Multilingual, in-person and online, with video and image verification, four-level nested article categories, training and consulting packages, assessments and matching tests, in-app wallets and payment gateways, and case-history meeting flows. Built for national and international scale.
+- [NIGC](https://crm.nigc-ar.ir/): Three independent Vue applications for the National Iranian Gas Company — a staff CRM, a field-operations PWA (https://es.nigc-ar.ir/pwa2) and the reward-based Gaziom app. Multi-theme, each with its own visual identity, animated interfaces, realtime photo capture for tasks, and AI suggestions for gas usage.
+- Cafe Mahour: Reservation-first platform for a cafe designed around consultants and brokers — table bookings with bundled packages, a full restaurant flow, and a two-level admin (cafe owner and platform owner). The deployment is private.
+- Baam: Professional qualification platform for inspectors, evaluators and auditors, built with Nuxt 4. Includes a resume builder, job selection, automatic per-role skill-gap analysis, and suggested assessments, courses, podcasts and articles. Under active development.
+
+## Skills
+
+- Primary stack: Vue, Nuxt, Laravel, Python.
+- Also used: Django, Odoo, TypeScript, JavaScript, PHP, SQL/SQLite, Kivy, Flet, Telegram Bot API (telebot, python-telegram-bot), GSAP, plain CSS.
+- Systems: Linux administration down to chroot, systemd and boot-level troubleshooting; daily driver OS for nine years.
+- Security: working knowledge of XSS, SQLi, IDOR and DDoS mitigation — application-level hardening, not penetration testing.
+- Not claimed: production load balancing (theory only) and deep PHP/JS/TS internals.
+
+## Open source
+
+- [Kowshan UI Kit](https://kowshan-ui-kit.pages.dev/): Open UI kit of components and utilities, built by directing AI with no heavy abstractions.
+- [GitHub — Kourva](https://github.com/kourva): 940+ stars across owned repositories, 1,750+ followers, most-starred project AwesomeChatGPTBot.
+
+## Contact
+
+- [Contact section](https://kourva.github.io/#contact): Best reached by email or Telegram.
+- Email: realkourva@proton.me
+- GitHub: https://github.com/kourva
+- Telegram: https://t.me/k0urv4
+
+## Optional
+
+- [Sitemap](https://kourva.github.io/sitemap.xml)
+- [Structured data](https://kourva.github.io/): Person, Organization, WebSite, ProfilePage and BreadcrumbList JSON-LD are embedded in the homepage.

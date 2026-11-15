@@ -1,0 +1,4 @@
+Contact: mailto:realkourva@proton.me
+Expires: 2027-11-15T00:00:00.000Z
+Preferred-Languages: en, fa, tr
+Canonical: https://kourva.github.io/.well-known/security.txt
