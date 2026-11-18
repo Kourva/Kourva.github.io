@@ -3,7 +3,8 @@
 
 User-agent: *
 Allow: /
-Disallow: /_nuxt/
+# Do not block /_nuxt/ — Google needs the CSS and JS to render the page.
+Allow: /_nuxt/
 
 # Search engines
 User-agent: Googlebot
