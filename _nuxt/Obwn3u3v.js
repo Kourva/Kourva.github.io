@@ -1,0 +1,1 @@
+var e=()=>({legacy:!1,fallbackLocale:`en`,missingWarn:!1,fallbackWarn:!1});export{e as default};

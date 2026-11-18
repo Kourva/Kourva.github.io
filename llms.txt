@@ -31,12 +31,23 @@ Kourva works remote-first across Ardabil, Tabriz and Tehran, and is currently em
 - [Kowshan UI Kit](https://kowshan-ui-kit.pages.dev/): Open UI kit of components and utilities, built by directing AI with no heavy abstractions.
 - [GitHub — Kourva](https://github.com/kourva): 940+ stars across owned repositories, 1,750+ followers, most-starred project AwesomeChatGPTBot.
 
+## Languages
+
+- English (default): https://kourva.github.io/
+- Turkish: https://kourva.github.io/tr
+- Russian: https://kourva.github.io/ru
+- Arabic (RTL): https://kourva.github.io/ar
+- Persian (RTL): https://kourva.github.io/fa
+
+The structure and content are identical across locales; English is the canonical source.
+
 ## Contact
 
 - [Contact section](https://kourva.github.io/#contact): Best reached by email or Telegram.
 - Email: realkourva@proton.me
 - GitHub: https://github.com/kourva
 - Telegram: https://t.me/k0urv4
+- Instagram: https://instagram.com/k0urv4
 
 ## Optional
 

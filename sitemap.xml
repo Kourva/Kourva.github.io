@@ -1,36 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Homepage / portfolio profile. Sections live on this URL as anchors:
-         #about #approach #process #projects #stack #ai #work #contact -->
+<!--
+  hreflang values here MUST match what useLocaleHead() emits in <head>.
+  Locale config is code='tr', language='tr-TR' (codes keep the URLs short:
+  /tr, /ru, /ar, /fa), so the page emits BOTH tags per language and this
+  sitemap lists both too. Keep the two in sync if locales change.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
     <url>
         <loc>https://kourva.github.io/</loc>
-        <lastmod>2026-11-15</lastmod>
+        <lastmod>2026-11-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="tr-TR" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="ar-SA" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://kourva.github.io/fa"/>
+        <xhtml:link rel="alternate" hreflang="fa-IR" href="https://kourva.github.io/fa"/>
     </url>
 
-    <!-- When these become real routes, uncomment and set real lastmod dates:
-
     <url>
-        <loc>https://kourva.github.io/projects</loc>
-        <lastmod>2026-11-15</lastmod>
+        <loc>https://kourva.github.io/tr</loc>
+        <lastmod>2026-11-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="tr-TR" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="ar-SA" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://kourva.github.io/fa"/>
+        <xhtml:link rel="alternate" hreflang="fa-IR" href="https://kourva.github.io/fa"/>
     </url>
 
     <url>
-        <loc>https://kourva.github.io/projects/asayroom</loc>
-        <lastmod>2026-11-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://kourva.github.io/ru</loc>
+        <lastmod>2026-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="tr-TR" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="ar-SA" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://kourva.github.io/fa"/>
+        <xhtml:link rel="alternate" hreflang="fa-IR" href="https://kourva.github.io/fa"/>
     </url>
 
     <url>
-        <loc>https://kourva.github.io/blog</loc>
-        <lastmod>2026-11-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://kourva.github.io/ar</loc>
+        <lastmod>2026-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="tr-TR" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="ar-SA" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://kourva.github.io/fa"/>
+        <xhtml:link rel="alternate" hreflang="fa-IR" href="https://kourva.github.io/fa"/>
     </url>
 
-    -->
+    <url>
+        <loc>https://kourva.github.io/fa</loc>
+        <lastmod>2026-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://kourva.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="tr-TR" href="https://kourva.github.io/tr"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kourva.github.io/ru"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="ar-SA" href="https://kourva.github.io/ar"/>
+        <xhtml:link rel="alternate" hreflang="fa" href="https://kourva.github.io/fa"/>
+        <xhtml:link rel="alternate" hreflang="fa-IR" href="https://kourva.github.io/fa"/>
+    </url>
+
 </urlset>
